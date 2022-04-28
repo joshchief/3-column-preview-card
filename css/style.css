@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap");
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+
+@import url("(https://fonts.google.com/specimen/Big+Shoulders+Display");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  padding: 20px;
+  background-color: #edf2f8;
+  line-height: 1.4;
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+.preview-card {
+  /* margin: 100px auto; */
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  /* align-items: center; */
+  grid-template-columns: repeat(3, 300px);
+  /* grid-template-rows: repeat(100px); */
+  /* gap: 30px; */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 50px;
+  color: #fff;
+  /* height: 400px; */
+}
+
+.card h3 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.card .about {
+  margin: 20px 0 50px 0;
+}
+
+.learn-more {
+  background-color: #fff;
+  text-align: center;
+  color: hsl(31, 77%, 52%);
+  padding: 10px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  margin: 100px 0 10px 0;
+  width: 150px;
+}
+
+.card--suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card--sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card--luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 780px) {
+  .preview-card {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
